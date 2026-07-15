@@ -1,0 +1,20 @@
+// Last updated: 15/07/2026, 14:59:51
+class NumArray {
+    int[] nums;
+    public NumArray(int[] nums) {
+        this.nums=nums;
+    }
+    public int sumRange(int left,int right) {
+        int sum=0;
+        for(int i=left;i<=right;i++){
+            sum=sum+nums[i];
+        }
+        return sum;
+    }
+}
+
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * NumArray obj = new NumArray(nums);
+ * int param_1 = obj.sumRange(left,right);
+ */
